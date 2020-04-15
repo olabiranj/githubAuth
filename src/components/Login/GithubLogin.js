@@ -35,26 +35,21 @@ function GitHubLogin() {
         method: "POST",
         body: JSON.stringify(requestData)
       })
-        .then(response =>{
-          response.json()
-        })
+        .then(response => response.json())
         .then(data => {
-          console.log(data)
           dispatch({
             type: "LOGIN",
             payload: { user: data, isLoggedIn: true }
           });
         })
         .catch(error => {
-          console.log(error);
           dispatch({
             type: "SET_ERROR",
-            payload: error
-            
+            payload: 'Error, Authorization failed'
           });
         });
     }
-  });
+  }, [dispatch, auth]);
   if (auth.isLoggedIn) {
     return <Redirect to="/dashboard" />;
   }
