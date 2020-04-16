@@ -30,7 +30,7 @@ function GitHubLogin() {
         code: newUrl[1],
       };
 
-      const proxy_url = auth.proxy_url;
+      const proxy_url = "/authenticate";
       // Use code parameter and other parameters to make POST request to proxy_server
       fetch(proxy_url, {
         method: "POST",

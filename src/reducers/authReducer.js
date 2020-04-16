@@ -4,7 +4,6 @@ const initialState = {
   client_id: "4e66601162a5193b15b9",
   redirect_uri: "https://gituth.herokuapp.com/",
   client_secret: "c3aafb30cf0fdaa3cafbf12a4813e5b787a7e96d",
-  proxy_url: "https://gituth.herokuapp.com/authenticate",
 };
 
 export default function (state = initialState, action) {
