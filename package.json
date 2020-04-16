@@ -21,7 +21,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node server",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
