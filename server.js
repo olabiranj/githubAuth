@@ -2,12 +2,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const FormData = require("form-data");
 const fetch = require("node-fetch");
+const path = require("path");
 
 const app = express();
-
 app.use(bodyParser.json());
 app.use(bodyParser.json({ type: "text/*" }));
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "build")));
 
 // Enabled Access-Control-Allow-Origin", "*" in the header so as to by-pass the CORS error.
 app.use((req, res, next) => {
@@ -49,6 +51,8 @@ app.post("/authenticate", (req, res) => {
       return res.status(400).json(error);
     });
 });
-
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html")); //serving build folder
+});
 const PORT = process.env.SERVER_PORT || 5000;
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
