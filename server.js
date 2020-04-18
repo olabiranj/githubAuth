@@ -51,8 +51,6 @@ app.post("/authenticate", (req, res) => {
       return res.status(400).json(error);
     });
 });
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "build", "index.html")); //serving build folder
-});
+
 const PORT = process.env.SERVER_PORT || 5000;
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));

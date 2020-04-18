@@ -16,7 +16,7 @@ const GithubDashboard = () => {
   } = auth.user;
 
   return (
-    <div className="container p t-4">
+    <div className="container py-4">
       <h3>{name}</h3>
       <h5>
         {company}, {location}
