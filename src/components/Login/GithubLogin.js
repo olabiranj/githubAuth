@@ -30,7 +30,8 @@ function GitHubLogin() {
         code: newUrl[1],
       };
 
-      const proxy_url = "/authenticate";
+      const proxy_url =
+        "https://olabiranj.herokuapp.com/api/github/authenticate";
       // Use code parameter and other parameters to make POST request to proxy_server
       fetch(proxy_url, {
         method: "POST",
