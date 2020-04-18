@@ -45,6 +45,7 @@ function GitHubLogin() {
           });
         })
         .catch((error) => {
+          console.log(error);
           setLoaded(false);
           dispatch({
             type: "SET_ERROR",
