@@ -25,7 +25,7 @@ const GithubDashboard = () => {
       <div className="row  mt-4 pt-4">
         <div className="col-sm-8">
           <div className="row">
-            <div className="col-sm-4 mb-4">
+            <div className="col-4 mb-4">
               <img
                 className="rounded-circle"
                 style={{ width: "100%" }}
