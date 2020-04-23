@@ -1,9 +1,9 @@
 const initialState = {
   isLoggedIn: false,
   user: null,
-  client_id: "4e66601162a5193b15b9",
-  redirect_uri: "https://gituth.herokuapp.com/",
-  client_secret: "c3aafb30cf0fdaa3cafbf12a4813e5b787a7e96d",
+  client_id: process.env.REACT_APP_CLIENT_ID,
+  redirect_uri: process.env.REACT_APP_REDIRECT_URI,
+  client_secret: process.env.REACT_APP_CLIENT_SECRET,
 };
 
 export default function (state = initialState, action) {

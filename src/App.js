@@ -17,9 +17,6 @@ const App = () => {
             <Route path="/dashboard">
               <Dashboard />
             </Route>
-            <Route path="/test">
-              <h1>Hello</h1>
-            </Route>
           </Switch>
         </Router>
       </React.Fragment>
