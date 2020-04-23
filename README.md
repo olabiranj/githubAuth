@@ -1,5 +1,9 @@
 A Github Authentication app made with react. It serves as a guide for react developers who intends integrating react with OAuth provided by github.
 
+### Live
+
+https://gituth.herokuapp.com/
+
 ### Usage and Setup
 
 - Clone this repo. Go into the root folder and run `npm install` to install all necessary dependencies.
