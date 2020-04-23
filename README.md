@@ -2,7 +2,11 @@ A Github Authentication app made with react. It serves as a guide for react deve
 
 ### Usage and Setup
 
-Clone this repo. Go into the root folder and run `npm install` to install all necessary dependencies.
+- Clone this repo. Go into the root folder and run `npm install` to install all necessary dependencies.
+- Create a .env file in the root folder of this project.
+- Go to login to your github account, navigate to Settings > Developer Settings > OAuth Apps.
+- Create a new OAuth App and get a free client secret and client ID.
+- Set the credentials you got as REACT_APP_CLIENT_ID, REACT_APP_CLIENT_SECRET and the REACT_APP_REDIRECT_URI you filled while creating the OAuth in the env file.
 
 ## Available Scripts
 
