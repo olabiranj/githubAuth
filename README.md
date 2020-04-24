@@ -35,7 +35,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Credit
 
-The news sources are gotten from https://restcountries.eu
+Auth provided by Github
 
 ### Like this project?
 
