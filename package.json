@@ -26,7 +26,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "clean": "rimraf build",
-    "postbuild": "rimraf build/**/*.map",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
